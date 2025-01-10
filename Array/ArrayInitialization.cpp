@@ -20,4 +20,3 @@ int main(){
     PrintArray(arr, size);
     return 0;
 }
-
