@@ -25,4 +25,5 @@ int main(){
     }
     printArray(arr,size);
     cout<<findMissingEle(arr,size);
+    
 }
