@@ -8,7 +8,11 @@ void PrintArray(int arr[], int size){
 int Partition(int arr[], int low, int high){
     
 }
-int QuickSort(int arr[], int size, )
+int QuickSort(int arr[], int low, int high){
+    if(low<high){
+        
+    }
+}
 int main(){
     int size;
     cout<<"Enter the size: "<<endl;
