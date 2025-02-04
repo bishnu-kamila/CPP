@@ -5,6 +5,9 @@ void PrintArray(int arr[], int size){
         cout<<arr[i]<<" ";
     }
 }
+int Partition(int arr[], int low, int high){
+    
+}
 int QuickSort(int arr[], int size, )
 int main(){
     int size;
