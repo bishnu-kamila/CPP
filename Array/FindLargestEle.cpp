@@ -1,7 +1,13 @@
 #include<iostream>
 using namespace std;
 int findLargest(int arr[], int size){
-
+    int largest = arr[0];
+    for(int i=0;i<size;i++){
+        if(arr[i]<arr[i+1]){
+            largest = arr[i+1];
+        }
+    }
+    return largest;
 }
 
 int main(){
