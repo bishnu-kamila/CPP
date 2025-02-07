@@ -19,5 +19,5 @@ int main(){
     for(int i=0;i<size;i++){
         cin>>arr[i];
     }
-    cout<<"The Second Largest element of the given array is: "<<findLargest(arr, size);
+    cout<<"The Second Largest element of the array is: "<<findLargest(arr, size);
 }
