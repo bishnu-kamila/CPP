@@ -3,11 +3,11 @@ using namespace std;
 int findLargest(int arr[], int size){
     int largest = arr[0];
     for(int i=0;i<size;i++){
-        if(arr[i]<arr[i+1]){
-            largest = arr[i+1];
+        if(largest<arr[i]){
+            largest = arr[i];
         }
     }
-    return largest;
+    return largest; 
 }
 
 int main(){
@@ -19,5 +19,5 @@ int main(){
     for(int i=0;i<size;i++){
         cin>>arr[i];
     }
-    cout<<"The Second Largest element of the array is: "<<findLargest(arr, size);
+    cout<<"The Largest element of the array is: "<<findLargest(arr, size);
 }
