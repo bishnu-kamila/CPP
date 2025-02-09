@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void reverseArray(int arr[], int size){
-    for(int i=size;i>0;i--){
+    for(int i=size;i>=0;i--){
         cout<<arr[i]<<" ";
     }
 }
