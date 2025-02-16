@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-int HeapSort(int arr[], int size){
+int HeapSort(int arr[], int size, int i){
+    int largest = i;
     
 }
 int main(){
