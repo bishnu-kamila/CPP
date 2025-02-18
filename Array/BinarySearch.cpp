@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
-
+int binarySearch(int arr[],int low, int high, int x){
+    while(low<=high){
+        
+    }
+}
 int main(){
     int size;
     cout<<"Enter the size of the array: ";
