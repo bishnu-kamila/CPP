@@ -17,10 +17,10 @@ int main(){
         cin>>arr[i];
     }
     printArray(arr,size);
-    // int p;
-    // cout<<"Enter the index which we want to delete"<<endl;
-    // cin>>p;
-    for(int i=size;i<size-1;i++){
+    int p;
+    cout<<"Enter the index which we want to delete"<<endl;
+    cin>>p;
+    for(int i=p;i<size-1;i++){
         arr[i]=arr[i+1];
     }
     size--;
