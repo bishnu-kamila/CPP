@@ -18,7 +18,7 @@ int main(){
     cout<<"Enter the size of the array: ";
     cin>>size;
     int arr[size];
-    cout<<"Enter the array elements in a sorted manner : ";
+    cout<<"Enter the array elemd manner : ";
     for(int i=0;i<size;i++){
         cin>>arr[i];
     }
