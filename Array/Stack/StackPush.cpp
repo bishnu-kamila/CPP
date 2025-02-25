@@ -5,4 +5,11 @@ int main(){
     st.push(0);
     st.push(1);
     st.push(2);
+    while (!st.empty())
+    {
+        cout<<' '<<st.top();
+        st.pop();
+    }
+    return 0;
+    
 }
