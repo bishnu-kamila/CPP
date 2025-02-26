@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stack>
 using namespace std;
 int main(){
     stack<int> st;
@@ -11,5 +12,4 @@ int main(){
         st.pop();
     }
     return 0;
-    
 }
