@@ -6,8 +6,8 @@ int main(){
     int size;
     cout<<"Enter how much element you want to push : "<<endl;
     cin>>size;
+   cout<<"Enter element to push: "<<endl;
     for(int i=0;i<size;i++){
-        
         st.push(i);
     }
     
