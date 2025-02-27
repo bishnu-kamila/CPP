@@ -4,11 +4,13 @@ using namespace std;
 int main(){
     stack<int> st;
     int size;
+    int value;
     cout<<"Enter how much element you want to push : "<<endl;
     cin>>size;
    cout<<"Enter element to push: "<<endl;
     for(int i=0;i<size;i++){
-        st.push(i);
+        cin>>value;
+        st.push(value);
     }
     while (!st.empty())
     {
