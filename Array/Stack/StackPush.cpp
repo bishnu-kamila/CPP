@@ -3,9 +3,14 @@
 using namespace std;
 int main(){
     stack<int> st;
-    st.push(0);
-    st.push(1);
-    st.push(2);
+    int size;
+    cout<<"Enter how much element you want to push : "<<endl;
+    cin>>size;
+    for(int i=0;i<size;i++){
+        
+        st.push(i);
+    }
+    
     while (!st.empty())
     {
         cout<<' '<<st.top();
