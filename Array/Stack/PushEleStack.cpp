@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
-void push()
+void push(){
+    
+}
 int main(){
     int stack;
 }
