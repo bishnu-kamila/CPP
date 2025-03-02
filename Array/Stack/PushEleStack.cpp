@@ -74,7 +74,6 @@ int main()
     // Create a stack of size 3
     Stack stack(3);
 
-    // Push elements into the stack
     stack.push(10);
     stack.push(20);
     stack.push(30);
@@ -86,11 +85,8 @@ int main()
     // Print the top element of the stack
     cout << "The top element is " << stack.peek() << endl;
 
-    // Pop all elements from the stack
     stack.pop();
     stack.pop();
-
-    // Check if the stack is empty and print the result
     if (stack.isEmpty()) {
         cout << "The stack is empty" << endl;
     }
