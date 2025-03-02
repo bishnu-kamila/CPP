@@ -40,19 +40,15 @@ public:
         arr[++top] = x;
     }
 
-    // Function to remove an element from the stack
     int pop()
     {
-        // Check if the stack is empty
         if (isEmpty()) {
             cout << "Underflow\n";
             return -1;
         }
-        // Remove element and decrement top
         return arr[top--];
     }
 
-    // Function to return the top element of the stack
     int peek()
     {
         if (!isEmpty())
