@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
+void push(){
 
+}
+void pop(){
+    
+}
 int main(){
     int size;
     cout<<"Enter the size"<<endl;
