@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace srd;
+using namespace std;
 struct Node{
     int data;
     Node* next;
@@ -51,7 +51,7 @@ void display() {
         }
         cout << "NULL" << endl;
     }
-    ~Stack() {
+    Stack() {
         while (!isEmpty()) {
             pop();
         }
@@ -63,7 +63,7 @@ int main(){
     s.push(20);
     s.push(30);
     s.display();
-    cout << "Top element: " << s.peek() << endl;
+    cout << "Top element: " << s.peek()<< endl;
     s.pop();
     s.display();
     return 0;
