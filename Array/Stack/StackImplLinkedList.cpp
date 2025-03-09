@@ -51,14 +51,14 @@ void display() {
         }
         cout << "NULL" << endl;
     }
-    Stack() {
+    stack() {
         while (!isEmpty()) {
             pop();
         }
     }
 };
 int main(){
-    Stack s;
+    stack s;
     s.push(10);
     s.push(20);
     s.push(30);
