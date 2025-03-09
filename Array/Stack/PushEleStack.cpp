@@ -64,10 +64,10 @@ int main()
     stack.pop();
     stack.pop();
     if (stack.isEmpty()) {
-        cout << "The stack is empty" << endl;
+        cout << "The stack is empty " << endl;
     }
     else {
-        cout << "The stack is not empty" << endl;
+        cout << "The stack is not empty " << endl;
     }
 
     return 0;
