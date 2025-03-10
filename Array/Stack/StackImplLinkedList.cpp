@@ -1,44 +1,58 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-struct Node{
+
+struct Node {
     int data;
     Node* next;
 };
-class stack{
+
+class stack {
 private:
-Node* top;
+    Node* top;
+
 public:
-Stack(){
-    top = nullptr;
-}
-void push(int value) {
-    Node* newNode = new Node();
-    newNode->data = value;
-    newNode->next = top;
-    top = newNode;
-    cout << value << " pushed onto stack." << endl;
-}
-void pop() {
-    if (isEmpty()) {
-        cout << "Stack underflow!" << endl;
-        return;
+    stack() {  // Correct constructor name
+        top = nullptr;
     }
-    Node* temp = top;
-    top = top->next;
-    cout << temp->data << " popped from stack." << endl;
-    delete temp;
-}
-int peek() {
-    if (isEmpty()) {
-        cout << "Stack is empty!" << endl;
-        return -1;
+
+    ~stack() { // Destructor to free memory
+        while (!isEmpty()) {
+            pop();
+        }
     }
-    return top->data;
-}
-bool isEmpty() {
-    return top == nullptr;
-}
-void display() {
+
+    void push(int value) {
+        Node* newNode = new Node();
+        newNode->data = value;
+        newNode->next = top;
+        top = newNode;
+        cout << value << " pushed onto stack." << endl;
+    }
+
+    void pop() {
+        if (isEmpty()) {
+            cout << "Stack underflow!" << endl;
+            return;
+        }
+        Node* temp = top;
+        top = top->next;
+        cout << temp->data << " popped from stack." << endl;
+        delete temp;
+    }
+
+    int peek() {
+        if (isEmpty()) {
+            cout << "Stack is empty!" << endl;
+            return -1;
+        }
+        return top->data;
+    }
+
+    bool isEmpty() {
+        return top == nullptr;
+    }
+
+    void display() {
         if (isEmpty()) {
             cout << "Stack is empty!" << endl;
             return;
@@ -51,19 +65,15 @@ void display() {
         }
         cout << "NULL" << endl;
     }
-    stack() {
-        while (!isEmpty()) {
-            pop();
-        }
-    }
 };
-int main(){
+
+int main() {
     stack s;
     s.push(10);
     s.push(20);
     s.push(30);
     s.display();
-    cout << "Top element : " << s.peek()<< endl;
+    cout << "Top element: " << s.peek() << endl;
     s.pop();
     s.display();
     return 0;
