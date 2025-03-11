@@ -11,11 +11,11 @@ private:
     Node* top;
 
 public:
-    stack() {  // Correct constructor name
+    stack() { 
         top = nullptr;
     }
 
-    ~stack() { // Destructor to free memory
+    ~stack() { 
         while (!isEmpty()) {
             pop();
         }
