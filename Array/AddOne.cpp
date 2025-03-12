@@ -13,7 +13,7 @@ void printArray(int arr[], int size){
 }
 int main(){
     int size;
-    cout<<"Enter the size: "<<endl;
+    cout<<"Enter the size : "<<endl;
     cin>>size;
     int arr[size];
     cout<<"Enter the array elements: "<<endl;
@@ -22,5 +22,6 @@ int main(){
     }
     printArray(arr,size);
     addOne(arr,size);
+    cout<<"After increase one of each element: "<<endl;
     printArray(arr,size);
 }
