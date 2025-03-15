@@ -10,7 +10,16 @@ class Node{
         next = NULL;
     }
     Node(int data){
-        
+        this ->data = data;
+        this ->next = NULL;
+    }
+};
+
+class LinkedList{
+    Node *head;
+    public:
+    LinkedList(){
+        head = NULL;
     }
 }
 
