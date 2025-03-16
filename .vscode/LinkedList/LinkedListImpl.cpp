@@ -13,6 +13,13 @@ class Node{
         this->data = data;
         this->next = NULL;
     }
+};
+
+
+class LinkedList{
+    Node *head;
+    public:
+    
 }
 int main(){
     
