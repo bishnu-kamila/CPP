@@ -23,6 +23,19 @@ class LinkedList{
     LinkedList(){
         head = NULL;
     }
+    void insertAtHead(int data){
+        Node *newNode = new Node();
+        if(head == NULL){
+            head = newNode;
+            return;
+        }
+        newNode->next = this->head;
+        this->head = newNode;
+    }
+
+    void print(){
+        
+    }
     
 }
 int main(){
