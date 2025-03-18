@@ -26,5 +26,16 @@ class LinkedList{
     
 }
 int main(){
-    
+    LinkedList list;
+
+    list.insertAtHead(4);
+    list.insertAtHead(3);
+    list.insertAtHead(2);
+    list.insertAtHead(1);
+
+    cout<<"Element of the list are: ";
+
+    list.print();
+    cout<<endl;
+    return 0;
 }
