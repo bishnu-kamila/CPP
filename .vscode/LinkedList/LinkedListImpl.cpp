@@ -24,7 +24,7 @@ class LinkedList{
         head = NULL;
     }
     void insertAtHead(int data){
-        Node *newNode = new Node();
+        Node *newNode = new Node(data);
         if(head == NULL){
             head = newNode;
             return;
