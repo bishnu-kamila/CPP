@@ -34,10 +34,14 @@ class LinkedList{
     }
 
     void print(){
-        
+        Node *temp = head;
+        if(head == NULL){
+            cout<<"List empty"<<" ";
+            temp = temp->next;
+        }
     }
     
-}
+};
 int main(){
     LinkedList list;
 
