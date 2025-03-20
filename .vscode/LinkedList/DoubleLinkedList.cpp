@@ -12,7 +12,7 @@ class DoublyLinkedList {
     private:
         Node* head;
         Node* tail;
-
+}
 int main(){
     
 }
