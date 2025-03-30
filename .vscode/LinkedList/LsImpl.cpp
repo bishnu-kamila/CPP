@@ -20,4 +20,14 @@ class LinkedList{
     LinkedList(){
         head= NULL;
     }
+    void insertAtBegin(int data){
+        Node *newNode = new Node(data);
+        if(head == NULL){
+            head = newNode;
+            return;
+
+        }
+        newNode->next = this->head;
+        this->head = newNode;
+    }
 }
