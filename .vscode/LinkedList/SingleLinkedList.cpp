@@ -19,7 +19,7 @@ class LinkedList{
     Node *head;
     public:
     LinkedList(){
-        head = NULL;
+        head = NULL;    
     }
     void insertAtHead(int data){
         Node *newNode = new Node(data);
