@@ -37,3 +37,11 @@ class LinkedList{
         }
     }
 };
+int main(){
+    LinkedList list;
+    list.insertAtBegin(12);
+    list.insertAtBegin(20);
+    list.insertAtBegin(10);
+    list.insertAtBegin(1);
+    list.insertAtBegin(100);
+}
