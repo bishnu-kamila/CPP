@@ -9,6 +9,9 @@ class Node{
         this->prev = NULL;
         this->next = NULL;
     }
+    Node(int value){
+        
+    }
 }
 class LinkedList{
     
