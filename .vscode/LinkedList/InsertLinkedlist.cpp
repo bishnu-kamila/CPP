@@ -31,7 +31,7 @@ class LinkedList{
             return;
         }
         Node *temp = head;
-        if(temp->next !=NULL){
+        while(temp->next !=NULL){
             temp = temp->next;
         }
         temp->next = newNode;
@@ -39,7 +39,7 @@ class LinkedList{
 
     void print(){
         Node *temp = head;
-        while(temp->next!=NULL){
+        while(temp!=NULL){
             cout<<temp->data<<" ";
             temp = temp->next;
         }
@@ -51,7 +51,8 @@ int main(){
     list.insertAtEnd(101);
     list.insertAtEnd(102);
     list.insertAtEnd(103);
-    list.insertAtEnd(13);
+    list.insertAtEnd(105);
+    list.insertAtEnd(107);
 
     list.print();
 }
