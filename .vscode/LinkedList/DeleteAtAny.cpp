@@ -14,7 +14,10 @@ class Node{
     }
 };
 class LinkedList{
-    
+    Node *head;
+    LinkedList(){
+        
+    }
 }
 int main(){
 
