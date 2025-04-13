@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 class Node{
+    public:
     int data;
     Node *next;
 
@@ -8,7 +9,7 @@ class Node{
         data = 0;
         next = NULL;
     }
-    NOde(int data){
+    Node(int data){
         this->data = data;
         this->next = NULL;
     }
@@ -22,7 +23,7 @@ class LinkedList{
     }
 
     void addNode(int data){
-        Node* newNode = new Node(data);
+        Node *newNode = new Node(data);
         if(head == NULL){
             head = newNode;
             return;
@@ -35,25 +36,25 @@ class LinkedList{
     }
 
     void deleteAtAnyPosition(int data){
-        Node* temp = head;
-        while(temp->next->data != NULL){
+        Node *temp = head;
+        while(temp->next->data != data){
             temp = temp->next;
         }
-        Node* toDelete = head;
+        Node *toDelete = temp->next;
         temp->next = temp->next->next;
 
         delete toDelete;
     }
 
     void print(){
-        Node* temp = head;
+        Node *temp = head;
         while(temp!= NULL){
             cout<<temp->data<<" ";
             temp= temp->next;
         }
         cout<<endl;
     }
-}
+};
 int main(){
     LinkedList list;
     list.addNode(10);
@@ -61,8 +62,9 @@ int main(){
     list.addNode(12);
     list.addNode(13);
     list.addNode(14);
-
+    list.print();
     cout<<"After Delete Node"<<endl;
 
     list.deleteAtAnyPosition(13);
+    list.print();
 }
