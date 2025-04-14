@@ -66,5 +66,6 @@ int main(){
     list.print();
     cout<<"After Delete Node"<<endl;
     list.deleteAtAnyPosition(13);
+    list.deleteAtAnyPosition(11);
     list.print();
 }
