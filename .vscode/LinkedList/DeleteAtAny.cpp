@@ -62,9 +62,9 @@ int main(){
     list.addNode(12);
     list.addNode(13);
     list.addNode(14);
+    cout<<"The LinkedList is"<<endl;
     list.print();
     cout<<"After Delete Node"<<endl;
-
     list.deleteAtAnyPosition(13);
     list.print();
 }
