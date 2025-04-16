@@ -5,16 +5,26 @@ class Node{
     Node *next;
     Node *prev;
     Node(){
+        data = data;
+        prev = NULL;
+        next = NULL;
+    }
+    Node(int value){
         this->data = data;
         this->prev = NULL;
         this->next = NULL;
     }
-    Node(int value){
-        
-    }
-}
+};
 class LinkedList{
+    private:
+    Node *head;
+    public:
+    LinkedList(){
+        head = NULL;
+    }
+
     
+
 }
 int main(){
     
