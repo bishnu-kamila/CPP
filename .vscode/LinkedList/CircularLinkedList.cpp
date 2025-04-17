@@ -22,7 +22,9 @@ class LinkedList{
     LinkedList(){
         head = NULL;
     }
-
+    void insert(int data){
+        
+    }
     
 
 }
