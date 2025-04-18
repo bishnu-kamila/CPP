@@ -17,13 +17,21 @@ class Node{
 };
 class LinkedList{
     private:
-    Node *head;
+    Node *tail;
     public:
     LinkedList(){
-        head = NULL;
+        tail = NULL;
     }
     void insert(int data){
-        
+        Node *newNode = new Node(data);
+        if(tail==NULL){
+            tail = newNode;
+            tail->next = tail;
+        }else{
+            newNode->next = tell->next;
+            tail->next = newNode;
+            tail=newNode;
+        }
     }
     
 
