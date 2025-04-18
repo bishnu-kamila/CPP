@@ -33,6 +33,15 @@ class LinkedList{
             tail=newNode;
         }
     }
+
+    void display(){
+        if(tail==NULL){
+            cout<<"List is empty"<<endl;
+            return;
+        }
+
+        Node *temp = tail->next;
+    }
     
 
 }
