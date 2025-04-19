@@ -41,10 +41,24 @@ class LinkedList{
         }
 
         Node *temp = tail->next;
+        do{
+            cout<<temp->data<<"->";
+            temp = temp->next;
+        }while(temp ! = tail->next);
+        cout<<"(Back to start)"<<endl;
     }
-    
-
-}
+};
 int main(){
+    LinkedList list;
+    list.insert(10);
+    list.insert(100);
+    list.insert(101);
+    list.insert(102);
+    list.insert(103);
+    list.insert(104);
+
+    
+    list.display();
+    return;
     
 }
