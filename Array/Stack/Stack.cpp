@@ -36,6 +36,7 @@ int main(){
     S.push(10);
     S.push(50);
     S.push(30);
+    S.push(40);
     S.display();
 
 }
