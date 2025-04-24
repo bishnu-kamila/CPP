@@ -53,8 +53,7 @@ int main(){
     list.insert(102);
     list.insert(103);
     list.insert(104);
-
-    
+    list.insert(105);
     list.display();
     return;
     
