@@ -73,7 +73,8 @@ int main(){
     qqq.enqueue(101);
     qqq.enqueue(102);
     qqq.enqueue(103);
-    qqq.enqueue(104); // rear
+    qqq.enqueue(104);
+    qqq.enqueue(105); // rear
     
     cout<<"Queue elements are"<<endl;
     qqq.display();
